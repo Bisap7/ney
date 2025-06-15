@@ -1,0 +1,64 @@
+/* RealPage.css */
+
+.realpage-container {
+  max-width: 480px; 
+  margin: 30px auto; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  text-align: center; 
+  padding: 15px; 
+  background: linear-gradient(135deg, #fcefee, #f6f1ff);
+  color: #5a4e7c;
+}
+
+.main-title {
+  font-size: 26px; 
+  margin-bottom: 30px; 
+  font-weight: 700; 
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px #d1c4e9;
+}
+
+.video-card {
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(149, 135, 198, 0.15);
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 25px;
+}
+
+.video-player {
+  width: 100%; 
+  max-width: 400px; 
+  border-radius: 12px; 
+  display: block; 
+  margin: 0 auto;
+  box-shadow: 0 3px 8px rgba(149, 135, 198, 0.25);
+}
+
+.video-caption {
+  margin-top: 10px; 
+  font-size: 14px; 
+  color: #7c6ca1; 
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.end-button {
+  padding: 10px 24px; 
+  font-size: 16px; 
+  background-color: #a070ff; 
+  color: white; 
+  border: none; 
+  border-radius: 25px; 
+  cursor: pointer; 
+  font-weight: 600;
+  box-shadow: 0 5px 10px rgba(160, 112, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+.end-button:hover {
+  background-color: #8653ff;
+  box-shadow: 0 7px 16px rgba(134, 83, 255, 0.6);
+}

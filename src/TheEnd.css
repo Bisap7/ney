@@ -1,0 +1,50 @@
+/* theend.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.theend-container {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.end-video {
+  max-width: 150%;
+  max-height: 60vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.end-message {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .end-video {
+    max-width: 100%;
+  }
+  
+  .end-message {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
