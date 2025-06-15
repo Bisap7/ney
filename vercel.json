@@ -1,15 +1,13 @@
 {
-  "version": 2,
-  "builds": [
+  "headers": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-src https://drive.google.com"
+        }
+      ]
     }
   ]
 }
