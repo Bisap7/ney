@@ -136,7 +136,7 @@ const BirthdayPage = () => {
       backgroundColor: '#fff',
     }}
   >
-    <source src="video.mp4" type="video/mp4" />
+    <source src="/videos/small/video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -185,7 +185,7 @@ const BirthdayPage = () => {
       </div>
 
       <video width="300" controls className="video-player">
-        <source src="6.mp4" type="video/mp4" />
+        <source src="/videos/small/6.mp4" type="video/mp4" />
       </video>
 
       {/* Letter */}
@@ -729,7 +729,7 @@ const BirthdayPage = () => {
           opacity: 0
         }}
       >
-        <source src="sane.mp4" type="video/mp4" />
+        <source src="/videos/small/sane.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
