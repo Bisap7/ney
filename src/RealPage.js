@@ -41,7 +41,7 @@ const RealPage = () => {
 
       <div className="video-card">
         <video controls className="video-player">
-          <source src="editone.mp4" type="video/mp4" />
+          <source src="/videos/editone.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <p className="video-caption">
@@ -51,7 +51,7 @@ const RealPage = () => {
 
       <div className="video-card">
         <video controls className="video-player">
-          <source src="edittwo.mp4" type="video/mp4" />
+          <source src="/videos/edittwo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <p className="video-caption">
