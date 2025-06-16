@@ -15,7 +15,7 @@ function VirtualBirthday() {
       kissGif: 'kiss.gif'
     },
     videos: {
-      birthday: '/videos/swap.mp4'
+      birthday: '/videos/small/swap.mp4'
     },
     audio: {
       hug: 'ynag.mp3',
