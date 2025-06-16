@@ -1,13 +1,13 @@
 {
+  "version": 2,
+  "public": true,
   "headers": [
     {
-      "source": "/videos/(.*)",
+      "source": "/videos/(.*\.mp4)",
       "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000" },
         { "key": "Content-Type", "value": "video/mp4" }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/videos/(.*)", "destination": "/videos/" }
   ]
 }
