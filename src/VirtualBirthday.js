@@ -15,7 +15,7 @@ function VirtualBirthday() {
       kissGif: 'kiss.gif'
     },
     videos: {
-      birthday: '/videos/small/swap.mp4'
+      birthday: '/videos/small/swap.mp4'  // <-- You can keep this here, but it won't be used now
     },
     audio: {
       hug: 'ynag.mp3',
@@ -263,10 +263,17 @@ function VirtualBirthday() {
         
         <div className="video-section">
           <h2 className="video-title">What I felt after you walked away</h2>
-          <video controls autoPlay className="birthday-video">
-            <source src={assets.videos.birthday} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {/* Replaced video tag with Google Drive iframe */}
+<iframe
+  src="https://drive.google.com/file/d/1aMBvu5hllnmHjbRGTkM1szF7dUf5_voP/preview"
+  className="birthday-video"
+  frameBorder="0"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="Birthday Video"
+  style={{ width: '30%', height: '600px' }}
+/>
+
           <button 
             className="next-button"
             onClick={() => window.location.href = '/realpage'}

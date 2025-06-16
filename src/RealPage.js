@@ -21,7 +21,7 @@ const RealPage = () => {
     src="https://drive.google.com/file/d/1LyX65Y85iziln4gi5A_V8lx2tla1Pl3r/preview"
     style={{
       width: '100%',
-      height: '300px',
+      height: '700px',
       border: 'none',
       borderRadius: '8px',
       marginBottom: '15px'
@@ -40,20 +40,32 @@ const RealPage = () => {
 </div>
 
       <div className="video-card">
-        <video controls className="video-player">
-          <source src="/videos/small/editone.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+<iframe
+  src="https://drive.google.com/file/d/148TgCr45lz1ZOqHaGoFVhtz-YFkb1cez/preview"
+  className="video-player"
+  frameBorder="0"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="Video Player"
+  style={{ height: '700px' }} // you can adjust height here as needed
+></iframe>
+
         <p className="video-caption">
           You'll relive this moment. You'll be looking like this again.
         </p>
       </div>
 
       <div className="video-card">
-        <video controls className="video-player">
-          <source src="/videos/small/edittwo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+<iframe
+  src="https://drive.google.com/file/d/1fnID9a27J_W9vqbu12hF58UfoseUPj0j/preview"
+  className="video-player"
+  frameBorder="0"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="Video Player"
+  style={{ height: '700px' }} // Adjust height as you want
+></iframe>
+
         <p className="video-caption">
           Couldn't pick one so here we go again.
         </p>

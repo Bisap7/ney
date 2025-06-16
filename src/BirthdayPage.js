@@ -125,20 +125,22 @@ const BirthdayPage = () => {
   }}
 >
   {/* Video on the left */}
-  <video
-    width="400"
-    controls
-    style={{
-      borderRadius: '20px',
-      boxShadow: '0 8px 25px rgba(255, 105, 135, 0.3)',
-      flexShrink: 0,
-      maxWidth: '100%',
-      backgroundColor: '#fff',
-    }}
-  >
-    <source src="/videos/small/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+<iframe
+  src="https://drive.google.com/file/d/1lBAVOabbwvuX3LU0xiOcXyBYOTJ0eZVQ/preview"
+  allow="autoplay"
+  style={{
+    width: '300px',
+    height: '600px', // ⬅️ Increased height
+    borderRadius: '20px',
+    boxShadow: '0 8px 25px rgba(255, 105, 135, 0.3)',
+    flexShrink: 0,
+    maxWidth: '100%',
+    backgroundColor: '#fff',
+    display: 'block',
+    border: 'none',
+  }}
+></iframe>
+
 
   {/* Text on the right */}
   <ul
@@ -184,9 +186,21 @@ const BirthdayPage = () => {
         ))}
       </div>
 
-      <video width="300" controls className="video-player">
-        <source src="/videos/small/6.mp4" type="video/mp4" />
-      </video>
+<iframe
+  src="https://drive.google.com/file/d/1bzjlpbqvz4ZFhAcxiVp8AXIkWhzXqAa9/preview"
+  allow="autoplay"
+  style={{
+    width: '300px',
+    height: '600px',
+    borderRadius: '20px',
+    boxShadow: '0 8px 25px rgba(255, 105, 135, 0.3)',
+    backgroundColor: '#fff',
+    display: 'block',
+    border: 'none',
+    margin: '0 auto',
+  }}
+></iframe>
+
 
       {/* Letter */}
 <div style={{
@@ -700,7 +714,7 @@ const BirthdayPage = () => {
         fontFamily: 'roboto',
         textShadow: '1px 1px 3px rgba(0,0,0,0.1)'
       }}>
-        🌷 Our Video Memory
+        🌷 Video For You
       </h2>
       
       <p style={{
@@ -719,18 +733,35 @@ const BirthdayPage = () => {
       height: '400px',
       position: 'relative'
     }}>
-      <video 
-        controls 
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          animation: 'fadeInRight 0.8s ease-out 0.8s forwards',
-          opacity: 0
-        }}
-      >
-        <source src="/videos/small/sane.mp4" type="video/mp4" />
-      </video>
+<div
+  style={{
+    width: '100%',
+    height: '100%',
+    borderRadius: '20px',
+    boxShadow: '0 8px 25px rgba(255, 105, 135, 0.3)',
+    overflow: 'hidden',
+    backgroundColor: '#fff',
+    animation: 'fadeInRight 0.8s ease-out 0.8s forwards',
+    opacity: 0,
+    position: 'relative',
+  }}
+>
+  <iframe
+    src="https://drive.google.com/file/d/1aQ1-wF61e067zydcApj6xxIPWY8vZr87/preview"
+    allow="autoplay"
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      width: '120%',
+      height: '120%',
+      border: 'none',
+      transform: 'translate(-50%, -50%) scale(1.2)', // center + zoom
+      transformOrigin: 'center center',
+    }}
+  ></iframe>
+</div>
+
     </div>
   </div>
 

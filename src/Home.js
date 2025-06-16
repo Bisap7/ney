@@ -17,13 +17,21 @@ function Home() {
     <div style={styles.homePage}>
       <Fade triggerOnce>
         <div style={styles.videoContainer}>
-          <video 
-            controls
-            loop
-            style={styles.introVideo}
-          >
-            <source src="/videos/small/intro.mp4" type="video/mp4" />
-          </video>
+<iframe
+  src="https://drive.google.com/file/d/15q8zIKX4v1vsIBWkg2YlxT6AyoosB6rt/preview"
+  width="640"
+  height="360"
+  allow="autoplay"
+  style={{
+    border: 'none',
+    borderRadius: '16px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+    display: 'block',
+    margin: '20px auto'
+  }}
+></iframe>
+
+
         </div>
       </Fade>
 
