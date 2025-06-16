@@ -1,13 +1,13 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/videos/(.*)",
       "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "frame-src https://drive.google.com"
-        }
+        { "key": "Content-Type", "value": "video/mp4" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/videos/(.*)", "destination": "/videos/$1" }
   ]
 }
