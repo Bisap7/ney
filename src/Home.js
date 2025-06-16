@@ -22,7 +22,7 @@ function Home() {
             loop
             style={styles.introVideo}
           >
-            <source src="/videos/intro.mp4" type="video/mp4" />
+            <source src="/videos/small/intro.mp4" type="video/mp4" />
           </video>
         </div>
       </Fade>
