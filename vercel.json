@@ -1,9 +1,8 @@
-cat > vercel.json << 'EOF'
 {
   "version": 3,
   "routes": [
     {
-      "src": "/(.*\.(jpg|png|jpeg|mp4))",
+      "src": "/(.*\\.(jpg|png|jpeg|mp4))",
       "headers": {
         "Cache-Control": "public, max-age=31536000",
         "Access-Control-Allow-Origin": "*"
@@ -14,4 +13,3 @@ cat > vercel.json << 'EOF'
     {"src": "/(.*)", "dest": "/index.html"}
   ]
 }
-EOF
